@@ -23,8 +23,17 @@ that takes an image of a face and generates a 128 point vector of characteristic
 * haarcascade_frontalface_default.xml is a pre-trained classifier for identifying faces provided by opencv.
 It is used in spark_webcam_streaming.py and training_set_generator.py
 
+* rbmWeights.csv contains weights gotten from training an RBM using rbm.py
+
+* example_rbmpy_output.txt is an example of the output from rbm.py, with the iteration costs and weights outputted
+
+
 ##  References
 Files referenced include 
 * https://github.com/ageitgey/face_recognition/blob/master/face_recognition/api.py,
 * https://github.com/shantnu/Webcam-Face-Detect/blob/master/webcam_cv3.py, and
 * https://github.com/echen/restricted-boltzmann-machines/blob/master/rbm.py .
+
+## Example of the program running
+When the program is running it shouldd look something like this 
+![facial_recog_running](program_running.png "facial_recognition_running")

@@ -1,3 +1,5 @@
+import sys
+
 import numpy
 from pyspark import SparkContext
 from numpy import genfromtxt
@@ -54,7 +56,7 @@ def _logistic(x):
 
 
 weights = genfromtxt('rbmWeights.csv', delimiter=',')
-
+numpy.set_printoptions(threshold=sys.maxsize)
 # socket_stream.map(lambda v: "Embedding: " + v).pprint() # prints the embedding sent on the socket
 # prints the hidden units calculated from the weights
 socket_stream.map(lambda v: run_visible(numpy.fromstring(v, count=128, sep=", "), weights, 20)).pprint()

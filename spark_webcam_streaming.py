@@ -60,6 +60,7 @@ while True:
                 data += "\n"
 
                 c.send(data.encode('utf-8'))
+                print("face embedding sent")
         count += 1
     if anterior != len(faces):
         anterior = len(faces)
