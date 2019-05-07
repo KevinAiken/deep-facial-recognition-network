@@ -35,5 +35,6 @@ Files referenced include
 * https://github.com/echen/restricted-boltzmann-machines/blob/master/rbm.py .
 
 ## Example of the program running
-When the program is running it shouldd look something like this 
+When the program is running it should look something like this, with the opencv feed in the middle, hidden states calculated
+by Spark Streaming and rbmWeights on the left, and the server streaming embedded characteristics on the right:
 ![facial_recog_running](program_running.png "facial_recognition_running")
